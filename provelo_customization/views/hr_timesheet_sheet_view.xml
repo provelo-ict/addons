@@ -28,6 +28,11 @@
                     <field name="state" invisible="1"/>
                 </field>
 
+                <field name="account_id" position="replace">
+                    <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('account_type','=','normal')]"/>
+                </field>
+
+
             </field>
         </record>
 
